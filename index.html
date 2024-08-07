@@ -8,6 +8,8 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            position: relative;
+            display: inline-block;
         }
         .modal {
             display: none;
@@ -40,6 +42,34 @@
             text-decoration: none;
             cursor: pointer;
         }
+        #table{
+            background: linear-gradient(rgb(72, 119, 206),rgb(199, 93, 199),rgb(148, 148, 59));
+        }
+        .hehe{
+            animation: ammer;
+            animation-direction:normal;
+            text-shadow: #e90e0e;
+            text-transform: uppercase;
+            text-align: center;
+            border: "1";
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            background: #eccaca;
+            border: 2 ;
+            border-color: #860505;
+
+        }
+        @keyframes ammer{
+
+        }
+       .sip{
+        padding-top: 1%;
+        padding-bottom: 3%;
+       }
+       .eee{
+        
+       }
     </style>
     <script src= 
     "https://code.jquery.com/jquery-3.5.1.js"> 
@@ -48,7 +78,7 @@
 </head>
 <body>
 
-<h1>HTML Elements Test Page</h1>
+<h1>Test Page</h1>
 
 <!-- Text Elements -->
 <p>This is a paragraph.</p>
@@ -85,7 +115,14 @@
     <li>Ordered list item 2</li>
     <li>Ordered list item 3</li>
 </ol>
-
+<section class="sip">
+<select class="eee">
+    <option>option 1</option>
+    <option>option 1</option>
+    <option>option 1</option>
+    <option>option 1</option>
+</select>
+</section>
 <!-- Table Elements -->
 <table border="1">
     <tr>
@@ -120,18 +157,18 @@
 <div id="myModal2" class="modal">
     <div class="modal-content">
         <span class="close" id="close2">&times;</span>
-        <p>This is the content of Modal 2.</p>
+        <p>This is the content of Modal 2</p>
     </div>
 </div>
 
 <!-- Iframe -->
-<h2>Iframe Example</h2>
+<h2>Iframe</h2>
 <iframe src="https://prajwalnecklaje.github.io/" width="600" height="400"></iframe>
 <section> 
-    <h1>USer details</h1> 
+    <h1 class="hehe">USer details from json</h1> 
 
     <!-- TABLE CONSTRUCTION-->
-    <table id='table'> 
+    <table id='table' border="1"> 
         <!-- HEADING FORMATION -->
         <tr> 
             <th>User ID</th> 
