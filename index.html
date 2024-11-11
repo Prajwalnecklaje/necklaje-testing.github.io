@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Elements Test Page</title>
     <style>
+
+
+     canvas {
+            border: 1px solid black;
+        }
         .checkbox-label {
     display: inline-block;
     padding: 10px;
@@ -196,6 +201,36 @@
 <!-- Iframe -->
 <h2>Iframe</h2>
 <iframe src="https://prajwalnecklaje.github.io/" width="600" height="400"></iframe>
+
+
+<section>
+    <canvas id="myCanvas" width="500" height="400">Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+    // Getting the canvas element
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');  // Setting up a 2D context for drawing
+
+    // Drawing a rectangle
+    ctx.fillStyle = "blue";
+    ctx.fillRect(50, 50, 150, 100);  // x, y, width, height
+
+    // Drawing a circle
+    ctx.beginPath();
+    ctx.arc(300, 100, 50, 0, 2 * Math.PI);  // x, y, radius, startAngle, endAngle
+    ctx.fillStyle = "green";
+    ctx.fill();
+
+    // Drawing a line
+    ctx.beginPath();
+    ctx.moveTo(50, 300);  // Starting point
+    ctx.lineTo(450, 300); // Ending point
+    ctx.strokeStyle = "red";
+    ctx.lineWidth = 3;
+    ctx.stroke();
+</script>
+</section>
+
 <section> 
     <h1 class="hehe">USer details from json</h1> 
 
